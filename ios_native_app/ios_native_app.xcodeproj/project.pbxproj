@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A8A250422280EC8C00DCAA9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A250412280EC8C00DCAA9F /* AppDelegate.swift */; };
-		A8A250442280EC8C00DCAA9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A250432280EC8C00DCAA9F /* ViewController.swift */; };
 		A8A250472280EC8C00DCAA9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A250452280EC8C00DCAA9F /* Main.storyboard */; };
 		A8A250492280EC8F00DCAA9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A250482280EC8F00DCAA9F /* Assets.xcassets */; };
 		A8A2504C2280EC8F00DCAA9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A2504A2280EC8F00DCAA9F /* LaunchScreen.storyboard */; };
+		A8A250572280FDE100DCAA9F /* FlutterHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A250562280FDE100DCAA9F /* FlutterHostViewController.swift */; };
 		DB5C67541CCF23710880CD3A /* Pods_ios_native_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFC6A7C4B399309F8E4B12 /* Pods_ios_native_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +20,11 @@
 		54E86EEE548BC389F2BC2E3D /* Pods-ios_native_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_native_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios_native_app/Pods-ios_native_app.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A2503E2280EC8C00DCAA9F /* ios_native_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_native_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A250412280EC8C00DCAA9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8A250432280EC8C00DCAA9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8A250462280EC8C00DCAA9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8A250482280EC8F00DCAA9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8A2504B2280EC8F00DCAA9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8A2504D2280EC8F00DCAA9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A250562280FDE100DCAA9F /* FlutterHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterHostViewController.swift; sourceTree = "<group>"; };
 		D6FFC6A7C4B399309F8E4B12 /* Pods_ios_native_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_native_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,11 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				A8A250412280EC8C00DCAA9F /* AppDelegate.swift */,
-				A8A250432280EC8C00DCAA9F /* ViewController.swift */,
 				A8A250452280EC8C00DCAA9F /* Main.storyboard */,
 				A8A250482280EC8F00DCAA9F /* Assets.xcassets */,
 				A8A2504A2280EC8F00DCAA9F /* LaunchScreen.storyboard */,
 				A8A2504D2280EC8F00DCAA9F /* Info.plist */,
+				A8A250562280FDE100DCAA9F /* FlutterHostViewController.swift */,
 			);
 			path = ios_native_app;
 			sourceTree = "<group>";
@@ -228,8 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A250442280EC8C00DCAA9F /* ViewController.swift in Sources */,
 				A8A250422280EC8C00DCAA9F /* AppDelegate.swift in Sources */,
+				A8A250572280FDE100DCAA9F /* FlutterHostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
