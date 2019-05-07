@@ -19,7 +19,29 @@ flutter create -t module flutter_common_module
 
 2. Open Android Studio, import this project by clicking *File -> Open*, open folder `FlutterHybridExample/flutter_common_module`.
 
-3. During gradle sync it will fail because dependencies are not imported yet, Android Studio will prompt to do *Get dependencies*. Click and it's all set
+3. During gradle sync it will fail because dependencies are not imported yet, Android Studio will prompt to do *Get dependencies*. Click it.
+
+4. The project is using `AndroidX` packages, so you will see another error. Open `flutter_common_module/.android/Flutter/build.gradle`, replace the dependencies at the bottom from:
+
+```plain
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+}
+```
+
+to this:
+
+```plain
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.0'
+}
+```
+
+5. Errors should go away after a Gradle sync. Then open `FlutterFragment.java` and `Flutter.java `, remove all imports that the compiler marks red saying can't find the packages, Android Studio will then replace them with the correct ones.
 
 Then you should be able to build and run a demo pure Flutter app on your Android or iOS devices.
 
