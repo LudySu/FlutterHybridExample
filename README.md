@@ -11,10 +11,10 @@ Below is a quick-start guide to get things running.
 
 [Install Flutter SDK](https://flutter.dev/docs/get-started/install) if you haven't already.
 
-1. Go to folder `FlutterHybridExample`, type command line to generate common binary files:
+1. Go to folder `FlutterHybridExample/flutter_common_module`, type command line to generate common binary files:
 
 ```bash
-flutter create -t module flutter_common_module
+flutter pub get
 ```
 
 2. Open Android Studio, import this project by clicking *File -> Open*, open folder `FlutterHybridExample/flutter_common_module`.
