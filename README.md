@@ -1,3 +1,5 @@
+**DEPRECATED**: instructions below work for Flutter v1.7.8 and below, not valid for v1.9.x any more.
+
 An example demostrates how to add a new Flutter sub-module into existing native Android and iOS project, to make the drastic transition smoother.
 
 A detailed step-by-step guide on how to setup a Flutter hybrid project is available here:
