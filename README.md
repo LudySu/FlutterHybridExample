@@ -1,17 +1,15 @@
-**DEPRECATED**: instructions below work for Flutter v1.7.8 and below, not valid for v1.9.x any more.
-
 An example demostrates how to add a new Flutter sub-module into existing native Android and iOS project, to make the drastic transition smoother.
 
 A detailed step-by-step guide on how to setup a Flutter hybrid project is available here:
 
 1. [Power of hybrid (I): add flutter to existing apps](http://tsuinte.ru/2019/make-a-flutter-hybrid-app-1/)
-2. [Power of hybrid (II): communite with native code](http://tsuinte.ru/2019/make-a-flutter-hybrid-app-2/)
+2. [Power of hybrid (II): communicate with native code](http://tsuinte.ru/2019/make-a-flutter-hybrid-app-2/)
 
 Below is a quick-start guide to get things running.
 
 # Import Flutter project
 
-[Install Flutter SDK](https://flutter.dev/docs/get-started/install) if you haven't already.
+[Install Flutter SDK](https://flutter.dev/docs/get-started/install) if you haven't already. This example uses `v1.9.1`.
 
 1. Go to folder `FlutterHybridExample/flutter_common_module`, type command line to generate common binary files:
 
