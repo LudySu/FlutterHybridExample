@@ -1,8 +1,11 @@
 platform :ios, '10.0'
-use_frameworks!
-
-target 'ios_native_app' do
-end
 
 flutter_application_path = '../flutter_common_module'
-eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+target 'ios_native_app' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  install_all_flutter_pods(flutter_application_path)
+end
